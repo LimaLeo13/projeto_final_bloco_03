@@ -11,7 +11,7 @@ function ListaCategorias() {
 
     async function buscarCategorias() {
         try {
-            await buscar('/categorias', setCategorias, {})
+            await buscar('/categorias', setCategorias, )
 
         } catch (error: any) {
             
@@ -29,8 +29,8 @@ function ListaCategorias() {
             {categorias.length === 0 && (
                 <Dna
                     visible={true}
-                    height="200"
-                    width="200"
+                    height="300"
+                    width="300"
                     ariaLabel="dna-loading"
                     wrapperStyle={{}}
                     wrapperClass="dna-wrapper mx-auto"
